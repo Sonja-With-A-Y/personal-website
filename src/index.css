@@ -2,11 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+.root,
+#root,
+#docs-root {
+  --text: rgb(184, 182, 182);
+  --button: rgb(36, 43, 138);
+  --buttonhover: rgb(121, 127, 182);
+  --primary: #367ee9;
+  --secondary: #a0aec0;
+  --accent: #0b2247;
+  --background: #1c2835;
+  --main: #ffffff;
+  --header: #eaeaea;
+}
+
+/*.theme-light {
+  --text: #fff;
+  --primary: #367ee9;
+  --secondary: #a0aec0;
+  --accent: #718096;
+  --background: #fff;
+  --main: #0d0106;
+  --header: #2d3748;
+}
+
+.theme-dark {
+  --text: rgb(211, 210, 210);
+  --primary: #367ee9;
+  --secondary: #a0aec0;
+  --accent: #0f1724;
+  --background: #13202e;
+  --main: #ffffff;
+  --header: #eaeaea;
+}*/
+
 @layer components {
 
+  .navbar {
+    @apply fixed top-0 right-0 w-14 hover:w-44 h-screen pt-5
+    flex flex-col items-end transition-all duration-300 bg-accent
+  }
+
   .navbar-button {
-    @apply flex items-center justify-center w-10 h-10 m-2 bg-gray-600
-    hover:bg-gray-500 rounded-3xl hover:rounded-xl transition-all duration-300
+    @apply flex items-center justify-center w-10 h-10 m-2 bg-button
+    hover:bg-buttonhover rounded-3xl hover:rounded-xl transition-all duration-300
+    flex-shrink-0
+  }
+
+  .navtext {
+    @apply invisible opacity-0 transition-opacity ease-in duration-500 delay-100 
+    text-white flex-shrink
+  }
+
+  .navbar:hover .navtext {
+    @apply visible opacity-100 text-text
   }
 
 }

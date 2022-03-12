@@ -2,8 +2,9 @@ import NavBar from "../NavBar";
 
 export default function Profile() {
   return (
-    <div className="flex justify-center align-middle bg-gray-400 h-screen">
+    <div className="flex justify-center align-middle bg-background h-screen">
       <NavBar />
+      <h1 className="text-3xl text-text">Profile</h1>
     </div>
   )
 }
