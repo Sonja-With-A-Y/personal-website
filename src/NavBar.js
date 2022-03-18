@@ -1,10 +1,15 @@
+import { useThemeUpdate } from "./ThemeContext"
+
 import { Link } from "react-router-dom";
 import { IoHomeSharp } from "react-icons/io5";
 import { IoPersonSharp } from "react-icons/io5";
 import { BsPuzzleFill } from "react-icons/bs";
 import { GiWolfHowl } from "react-icons/gi";
+import { BsToggleOn } from "react-icons/bs";
 
 export default function NavBar() {
+  const toggleTheme = useThemeUpdate()
+
   return (
     <nav className="navbar">
 
@@ -29,7 +34,7 @@ export default function NavBar() {
         <Link to="/werewolf" className="navbar-button"><GiWolfHowl className="w-6 h-6 text-lm-text dark:text-dmtext" /></Link>
       </div>
 
-          <button className="mt-auto w-10 h-10 m-2 text-lmtext dark:text-dmtext">D</button>
+          <BsToggleOn onClick={toggleTheme} className="mt-auto w-10 h-10 m-2 text-lmtext dark:text-dmtext" />
 
     </nav>
   )
