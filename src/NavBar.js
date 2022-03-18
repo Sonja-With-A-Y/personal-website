@@ -10,26 +10,26 @@ export default function NavBar() {
 
       <div className="flex items-center">
         <span className="navtext">Home -</span>
-        <Link to="/" className="navbar-button"><IoHomeSharp className="w-6 h-6" /></Link>
+        <Link to="/" className="navbar-button"><IoHomeSharp className="w-6 h-6 text-lm-text dark:text-dmtext" /></Link>
       </div>
 
       <div className="flex items-center">
         <span className="navtext">Profile -</span>
-        <Link to="/profile" className="navbar-button"><IoPersonSharp className="w-6 h-6" /></Link>
+        <Link to="/profile" className="navbar-button"><IoPersonSharp className="w-6 h-6 text-lm-text dark:text-dmtext" /></Link>
 
       </div>
 
       <div className="flex items-center">
         <span className="navtext">Codebreaker -</span>
-        <Link to="/codebreaker" className="navbar-button"><BsPuzzleFill className="w-6 h-6" /></Link>
+        <Link to="/codebreaker" className="navbar-button"><BsPuzzleFill className="w-6 h-6 text-lm-text dark:text-dmtext" /></Link>
       </div>
 
       <div className="flex items-center">
         <span className="navtext">Werewolf -</span>
-        <Link to="/werewolf" className="navbar-button"><GiWolfHowl className="w-6 h-6" /></Link>
+        <Link to="/werewolf" className="navbar-button"><GiWolfHowl className="w-6 h-6 text-lm-text dark:text-dmtext" /></Link>
       </div>
 
-          <button className="mt-auto w-10 h-10 m-2 text-text">D</button>
+          <button className="mt-auto w-10 h-10 m-2 text-lmtext dark:text-dmtext">D</button>
 
     </nav>
   )
