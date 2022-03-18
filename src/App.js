@@ -1,17 +1,25 @@
 import React from 'react';
 import './App.css';
-import NavBar from "./NavBar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
+import Home from "./routes/home";
+import Profile from "./routes/profile";
+import Codebreaker from "./routes/codebreaker";
+import Werewolf from "./routes/werewolf";
 
 function App() {
 
-  // const theme="dark"
+  const theme="dark"
   return (
-    <div className="dark1">
-      <div className="flex justify-center align-middle bg-lmbackground dark:bg-dmbackground h-screen">
-        <NavBar />
-        <h1 className="text-3xl text-lmtext dark:text-dmtext">Home</h1>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="profile" element={<Profile />} />
+        <Route path="codebreaker" element={<Codebreaker />} />
+        <Route path="Werewolf" element={<Werewolf />} />
+      </Routes>
+    </BrowserRouter>
   );
   }
 
