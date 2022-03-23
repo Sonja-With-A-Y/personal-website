@@ -5,7 +5,7 @@ import { ThemeProvider } from "./ThemeContext"
 import Home from "./routes/home";
 import Profile from "./routes/profile";
 import Codebreaker from "./routes/codebreaker";
-import Werewolf from "./routes/werewolf";
+import ColorGuesser from "./routes/color-guesser";
 
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="profile" element={<Profile />} />
           <Route path="codebreaker" element={<Codebreaker />} />
-          <Route path="Werewolf" element={<Werewolf />} />
+          <Route path="color-guesser" element={<ColorGuesser />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

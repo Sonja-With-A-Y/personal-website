@@ -2,7 +2,7 @@ import { useTheme, useThemeUpdate } from "../ThemeContext"
 import NavBar from "../NavBar";
 import GameBoard from "../codebreaker/GameBoard";
 
-export default function Profile() {
+export default function Codebreaker() {
   const theme = useTheme()
   const toggleTheme = useThemeUpdate()
   return (

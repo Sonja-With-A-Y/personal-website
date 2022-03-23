@@ -46,7 +46,7 @@
 @layer components {
 
   .navbar {
-    @apply fixed top-0 right-0 w-14 hover:w-44 h-screen pt-5
+    @apply fixed top-0 right-0 w-14 hover:w-48 h-screen pt-5
     flex flex-col items-end transition-all duration-300 bg-lmnavbg
     dark:bg-dmnavbg
   }
@@ -59,7 +59,7 @@
 
   .navtext {
     @apply invisible opacity-0 transition-opacity ease-in duration-500 delay-100 
-    text-lmtext dark:text-dmtext flex-shrink
+    text-lmtext dark:text-dmtext flex-shrink whitespace-nowrap
   }
 
   .navbar:hover .navtext {
