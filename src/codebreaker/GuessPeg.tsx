@@ -1,6 +1,14 @@
+import React from "react"
 import { VscCircleLargeFilled } from "react-icons/vsc";
 
-export default function GuessPeg(props) {
+interface Props {
+  rowNum: number;
+  colNum: number;
+  guessPegColors: string[];
+  handleGuessPegColorChange: any;
+}
+
+export default function GuessPeg(props: Props) {
   const rowNum = props.rowNum
   const colNum = props.colNum
   const pegColor = (props) ? props.guessPegColors[rowNum][colNum] : "grey"

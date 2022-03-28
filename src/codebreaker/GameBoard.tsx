@@ -37,7 +37,7 @@ export default function GameBoard() {
     setChosenColor(color)
   }
 
-  const handleGuessPegColorChange = (rowNum, colNum) => {
+  const handleGuessPegColorChange = (rowNum: number, colNum: number) => {
     if (rowNum == (turnNum-1)) {
       setGuessPegColors((prevState) => {
         prevState[rowNum][colNum] = chosenColor
@@ -131,12 +131,12 @@ export default function GameBoard() {
   return(
     <div className="flex flex-col bg-blue-400 h-3/5 gap-y-4 mt-20 p-2 rounded-3xl">
         
-      <PegGridRow handleGuessPegColorChange={handleGuessPegColorChange} guessPegColors={guessPegColors} handleColorPick={handleColorPick} blackPegs={blackPegs} whitePegs={whitePegs} rowNum="5" color="red" />
-      <PegGridRow handleGuessPegColorChange={handleGuessPegColorChange} guessPegColors={guessPegColors} handleColorPick={handleColorPick} blackPegs={blackPegs} whitePegs={whitePegs} rowNum="4" color="green" />
-      <PegGridRow handleGuessPegColorChange={handleGuessPegColorChange} guessPegColors={guessPegColors} handleColorPick={handleColorPick} blackPegs={blackPegs} whitePegs={whitePegs} rowNum="3" color="blue" />
-      <PegGridRow handleGuessPegColorChange={handleGuessPegColorChange} guessPegColors={guessPegColors} handleColorPick={handleColorPick} blackPegs={blackPegs} whitePegs={whitePegs} rowNum="2" color="yellow" />
-      <PegGridRow handleGuessPegColorChange={handleGuessPegColorChange} guessPegColors={guessPegColors} handleColorPick={handleColorPick} blackPegs={blackPegs} whitePegs={whitePegs} rowNum="1" color="purple" />
-      <PegGridRow handleGuessPegColorChange={handleGuessPegColorChange} guessPegColors={guessPegColors} handleColorPick={handleColorPick} blackPegs={blackPegs} whitePegs={whitePegs} rowNum="0" color="pink" />
+      <PegGridRow handleGuessPegColorChange={handleGuessPegColorChange} guessPegColors={guessPegColors} handleColorPick={handleColorPick} blackPegs={blackPegs} whitePegs={whitePegs} rowNum={5} color="red" />
+      <PegGridRow handleGuessPegColorChange={handleGuessPegColorChange} guessPegColors={guessPegColors} handleColorPick={handleColorPick} blackPegs={blackPegs} whitePegs={whitePegs} rowNum={4} color="green" />
+      <PegGridRow handleGuessPegColorChange={handleGuessPegColorChange} guessPegColors={guessPegColors} handleColorPick={handleColorPick} blackPegs={blackPegs} whitePegs={whitePegs} rowNum={3} color="blue" />
+      <PegGridRow handleGuessPegColorChange={handleGuessPegColorChange} guessPegColors={guessPegColors} handleColorPick={handleColorPick} blackPegs={blackPegs} whitePegs={whitePegs} rowNum={2} color="yellow" />
+      <PegGridRow handleGuessPegColorChange={handleGuessPegColorChange} guessPegColors={guessPegColors} handleColorPick={handleColorPick} blackPegs={blackPegs} whitePegs={whitePegs} rowNum={1} color="purple" />
+      <PegGridRow handleGuessPegColorChange={handleGuessPegColorChange} guessPegColors={guessPegColors} handleColorPick={handleColorPick} blackPegs={blackPegs} whitePegs={whitePegs} rowNum={0} color="pink" />
 
       <div className="flex justify-between items-center">
         <label className="flex-grow">{turnDisplay}</label>
