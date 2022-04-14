@@ -4,11 +4,11 @@ import { VscCircleLargeFilled } from "react-icons/vsc";
 
 export default function GameBoard() {
   const colors = ["red", "green", "blue", "yellow", "purple", "pink"]
-  const [answer, setAnswer] = useState([])
+  const [answer, setAnswer] = useState<string[]>([])
 
   
   if (answer.length !== 5) {
-    let temp = []
+    let temp: string[] = []
     for (let i=0;i<5;i++) {
       let rand = Math.floor(Math.random() * 6)
       temp[i] = colors[rand]
@@ -33,7 +33,7 @@ export default function GameBoard() {
   const [turnDisplay, setTurnDisplay] = useState("Turn: 1")
   const [gameOver, setGameOver] = useState(false)
 
-  const handleColorPick = color => {
+  const handleColorPick = (color: string) => {
     setChosenColor(color)
   }
 
