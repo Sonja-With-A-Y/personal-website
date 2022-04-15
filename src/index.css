@@ -66,4 +66,8 @@
     @apply visible opacity-100
   }
 
+  .slider-thumb::-webkit-slider-thumb {
+    @apply appearance-none w-2 h-3 bg-green-600 cursor-pointer;
+  }
+
 }

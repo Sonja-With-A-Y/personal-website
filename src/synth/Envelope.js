@@ -7,10 +7,10 @@ export default function Envelope() {
       <p className="w-full text-center justify-center text-green-600">Envelope</p>
 
         <div className="h-24 w-32 border border-green-600" />
-        <Fader parameter="ATTACK" />
-        <Fader parameter="DECAY" />
-        <Fader parameter="SUSTAIN" />
-        <Fader parameter="RELEASE" />
+        <Fader parameter="ATTACK" faderId="4" />
+        <Fader parameter="DECAY" faderId="5" />
+        <Fader parameter="SUSTAIN" faderId="6" />
+        <Fader parameter="RELEASE" faderId="7" />
         <ModIndicators />
 
       </div>
