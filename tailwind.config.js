@@ -22,6 +22,10 @@ module.exports = {
         // header: "var(--header)",
         // accent: "var(--accent)",
       },
+      spacing: {
+        '120': '30rem',
+        '140': '35rem',
+      },
     },
   },
   plugins: [],

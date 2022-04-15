@@ -3,13 +3,14 @@ import ModIndicators from "./ModIndicators";
 
 export default function Envelope() {
   return(
-    <div className="flex flex-wrap h-2/5 w-1/2 justify-evenly items-center border border-green-600 p-1">
+    <div className="flex flex-wrap h-44 w-96 justify-evenly items-center border border-green-600 p-1">
       <p className="w-full text-center justify-center text-green-600">Envelope</p>
 
-        <Fader />
-        <Fader />
-        <Fader />
-        <Fader />
+        <div className="h-24 w-32 border border-green-600" />
+        <Fader parameter="ATTACK" />
+        <Fader parameter="DECAY" />
+        <Fader parameter="SUSTAIN" />
+        <Fader parameter="RELEASE" />
         <ModIndicators />
 
       </div>
