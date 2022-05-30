@@ -8,7 +8,7 @@ export default function LFO() {
   const lfoUpdate = useSelectedLFOUpdate()
 
   return(
-    <div className="flex flex-wrap justify-between h-44 w-60 border border-green-600 p-1">
+    <div className="flex flex-wrap justify-between h-44 w-60 rounded-sm border border-green-600 p-1">
         <p className="w-full text-center justify-center text-green-600">LFO</p>
 
         <div className="flex flex-col justify-between h-32 w-1/3 p-1">
@@ -21,7 +21,7 @@ export default function LFO() {
 
         <Fader parameter="RATE" faderId="2" />
         <Fader parameter="DEPTH" faderId="3" />
-        <ModIndicators />
+        <ModIndicators modPathId="0" />
 
       </div>
   )
