@@ -38,7 +38,7 @@ export function useModPathsUpdate() {
 }
 
 export function StateProvider({ children }) {
-  const [osc, setOsc] = useState("SINE")
+  const [osc, setOsc] = useState("sine")
   const [lfo, setLFO] = useState("SINE")
   const [faders, setFaders] = useState([80, 60, 40, 75, 90, 30, 60, 40, 110, 50])
   const [modPaths, setModPaths] = useState([[0, 1, 0], [1, 0, 0]])

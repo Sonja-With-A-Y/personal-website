@@ -1,7 +1,19 @@
 import * as Tone from 'tone'
 
-//create a synth and connect it to the main output (your speakers)
-const synth = new Tone.Synth().toDestination();
+export default function soundNote(note, oscType, faderValues) {
 
-//play a middle 'C' for the duration of an 8th note
-synth.triggerAttackRelease("C4", "8n");
+  const osc = new Tone.Oscillator(note, oscType, {volume: -6}).start();
+
+  const env = new Tone.AmplitudeEnvelope({
+    attack: faderValues[4]/127,
+		decay: faderValues[5]/127,
+		sustain: faderValues[6]/127,
+		release: faderValues[7]/127
+  });
+  const filter = new Tone.Filter(faderValues[0]*30+20, "lowpass", -24);
+  const vol = new Tone.Volume(-48+faderValues[8]/127*48);
+  osc.chain(env, filter, vol, Tone.Destination);
+
+  env.triggerAttackRelease(0.5);
+
+}
