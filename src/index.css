@@ -46,13 +46,15 @@
 @layer components {
 
   .navbar {
-    @apply fixed top-0 right-0 sm:bottom-0 w-14 hover:w-48 h-screen pt-5
+    @apply
+    fixed top-0 right-0 sm:bottom-0 w-14 hover:w-48 h-screen pt-5
     flex flex-col items-end transition-all duration-300 bg-lmnavbg
     dark:bg-dmnavbg
   }
 
   .navbar-button {
-    @apply flex items-center justify-center w-10 h-10 m-2 bg-lmbutton dark:bg-dmbutton
+    @apply
+    flex items-center justify-center w-10 h-10 m-2 bg-lmbutton dark:bg-dmbutton
     hover:bg-lmbuttonhover dark:hover:bg-dmbuttonhover rounded-3xl hover:rounded-xl
     transition-all duration-300 flex-shrink-0
   }
@@ -64,6 +66,17 @@
 
   .navbar:hover .navtext {
     @apply visible opacity-100
+  }
+
+  .footer {
+    @apply
+    fixed bottom-0 left-0 w-screen bg-red-300 h-32
+    flex
+  }
+
+  .footcol {
+    @apply 
+    flex flex-col flex-wrap grow justify-center items-center border-2
   }
 
   .slider-thumb::-webkit-slider-thumb {
