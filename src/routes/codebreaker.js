@@ -7,7 +7,7 @@ export default function Codebreaker() {
   const toggleTheme = useThemeUpdate()
   return (
     <div className={theme}>
-      <div className="flex justify-center align-middle bg-lmbackground dark:bg-dmbackground h-screen transition-colors duration 300">
+      <div className="flex justify-center align-middle bg-lmbackground dark:bg-dracbg h-screen transition-colors duration 300">
         <NavBar />
         <GameBoard />
       </div>

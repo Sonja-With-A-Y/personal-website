@@ -15,7 +15,17 @@
   --dmbuttonhover: rgb(70, 79, 179);
   --dmbackground: #1c2835;
   --dmnavbg: rgb(25, 30, 92);
-
+  --dracbg: #282a36;
+  --draccurline: #44475a;
+  --dracfg: #f8f8f2;
+  --draccomment: #6272a4;
+  --draccyan: #8be9fd;
+  --dracgreen: #50fa7b;
+  --dracorange: #ffb86c;
+  --dracpink: #ff79c6;
+  --dracpurple: #bd93f9;
+  --dracred: #ff5555;
+  --dracyellow: #f1fa8c;
   /* --primary: #367ee9;
   --secondary: #a0aec0;
   --accent: #0b2247;
@@ -49,19 +59,19 @@
     @apply
     fixed top-0 right-0 sm:bottom-0 w-14 hover:w-48 h-screen pt-5
     flex flex-col items-end transition-all duration-300 bg-lmnavbg
-    dark:bg-dmnavbg
+    dark:bg-draccurline
   }
 
   .navbar-button {
     @apply
-    flex items-center justify-center w-10 h-10 m-2 bg-lmbutton dark:bg-dmbutton
-    hover:bg-lmbuttonhover dark:hover:bg-dmbuttonhover rounded-3xl hover:rounded-xl
+    flex items-center justify-center w-10 h-10 m-2 bg-lmbutton dark:bg-draccomment
+    hover:bg-lmbuttonhover dark:hover:bg-dracyellow rounded-3xl hover:rounded-xl
     transition-all duration-300 flex-shrink-0
   }
 
   .navtext {
     @apply invisible opacity-0 transition-opacity ease-in duration-500 delay-100 
-    text-lmtext dark:text-dmtext flex-shrink whitespace-nowrap
+    text-lmtext dark:text-dracfg flex-shrink whitespace-nowrap
   }
 
   .navbar:hover .navtext {

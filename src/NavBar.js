@@ -16,31 +16,31 @@ export default function NavBar() {
 
       <div className="flex items-center">
         <span className="navtext">Home -</span>
-        <Link to="/" className="navbar-button"><IoHomeSharp className="w-6 h-6 text-lm-text dark:text-dmtext" /></Link>
+        <Link to="/" className="navbar-button"><IoHomeSharp className="w-6 h-6 text-lm-text dark:text-dracpurple" /></Link>
       </div>
 
       <div className="flex items-center">
         <span className="navtext">Profile -</span>
-        <Link to="/profile" className="navbar-button"><IoPersonSharp className="w-6 h-6 text-lm-text dark:text-dmtext" /></Link>
+        <Link to="/profile" className="navbar-button"><IoPersonSharp className="w-6 h-6 text-lm-text dark:text-dracpurple" /></Link>
 
       </div>
 
       <div className="flex items-center">
         <span className="navtext">Codebreaker -</span>
-        <Link to="/codebreaker" className="navbar-button"><BsPuzzleFill className="w-6 h-6 text-lm-text dark:text-dmtext" /></Link>
+        <Link to="/codebreaker" className="navbar-button"><BsPuzzleFill className="w-6 h-6 text-lm-text dark:text-dracpurple" /></Link>
       </div>
 
       <div className="flex items-center">
         <span className="navtext">Colour Guesser -</span>
-        <Link to="/color-guesser" className="navbar-button"><HiColorSwatch className="w-6 h-6 text-lm-text dark:text-dmtext" /></Link>
+        <Link to="/color-guesser" className="navbar-button"><HiColorSwatch className="w-6 h-6 text-lm-text dark:text-dracpurple" /></Link>
       </div>
 
       <div className="flex items-center">
         <span className="navtext">Synthesizer -</span>
-        <Link to="/synthesizer" className="navbar-button"><FaWaveSquare className="w-6 h-6 text-lm-text dark:text-dmtext" /></Link>
+        <Link to="/synthesizer" className="navbar-button"><FaWaveSquare className="w-6 h-6 text-lm-text dark:text-dracpurple" /></Link>
       </div>
 
-          <BsToggleOn onClick={toggleTheme} className="mt-auto w-10 h-10 m-2 text-lmtext dark:text-dmtext" />
+          <BsToggleOn onClick={toggleTheme} className="mt-auto w-10 h-10 m-2 text-lmtext dark:text-dracpurple" />
 
     </nav>
   )
